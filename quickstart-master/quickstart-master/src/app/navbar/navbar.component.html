@@ -1,0 +1,15 @@
+<div class="header">
+    <a href="https://www.instagram.com/palmhouse_sound/?hl=en" class="logo">
+        <img src="assets/Logo.png"></a>
+
+    <div class="menu">
+        <div class="about">
+            <a routerLink="/about">About Us</a>
+            <a (click)="login()" class="account"><img src="assets/User.png" style="width: 40px; height:40px;"></a>
+            <a routerLink="/book" class="cart"><img src="assets/Cart.png" style="width: 40px; height:40px;"></a>
+        </div>
+    </div>
+</div>
+<div *ngIf="loginShowed">
+    <login></login>
+</div>
